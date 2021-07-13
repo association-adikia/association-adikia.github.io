@@ -1,0 +1,92 @@
+/*
+Theme Name: Charity Club Child
+Author: Tonatheme
+Version: 1.0.0
+Author URI: http://themeforest.net/user/tonatheme
+Theme URI: http://themeforest.net/user/tonatheme
+Description: This is Charity Raised & Donation WordPress theme
+License: ''
+License URI: ''
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, translation-ready, microformats
+Text Domain: wp_charityclub
+Template: charityclub
+*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+}
+
+.theme-btn{
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner-title {
+    font-family: "Roboto",sans-serif;
+}
+
+.main-header .header-upper .nav-outer .btn-donate{
+    font-family: 'Roboto',sans-serif;
+}
+
+.main-menu .navigation > li > ul > li > a{
+    text-transform: uppercase;
+}
+
+.header-style-two .lower-part .outer-box .btn-box a{
+    font-family:'Roboto',sans-serif;
+}
+
+.main-slider .circular-drop{
+    font-family:'Roboto',sans-serif;
+}
+
+.default-featured-column .image-box .post-tag{
+    font-family:'Roboto',sans-serif;
+}
+
+.vertical-links-outer .link-block strong{
+    font-family:'Roboto',sans-serif;
+}
+
+.vertical-links-outer .link-block .title{
+    font-family:'Roboto',sans-serif;
+}
+
+.other-info .info-box li strong{
+    font-family:'Roboto',sans-serif;
+}
+
+.fact-counter .column .counter-title{
+    font-family:'Roboto',sans-serif;
+}
+
+.gallery-section .filter-btns{
+    font-family:'Roboto',sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sponsors-section .sponsors-slider2 {
+    position:relative;
+}
+
+.sponsors-section .sponsors-slider2 li img{
+    width: auto;
+}
+
+@media only screen and (max-width: 615px){
+    .sponsors-section .sponsors-slider2 li img {
+        width: auto;
+        max-width: 100%;
+    }
+}
