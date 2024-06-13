@@ -1,0 +1,248 @@
+(function ($) {
+
+  //Sponsors Slider
+  if ($('.sponsors-slider2').length) {
+    $('.sponsors-slider2').owlCarousel({
+      loop: true,
+      margin: 50,
+      nav: false,
+      dots: false,
+      smartSpeed: 500,
+      autoplay: 3000,
+      autoplayHoverPause: true,
+      autoWidth: true,
+      center: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+      }
+    });
+  }
+
+  //Testimonials Carousel Slider
+  if ($('.testimonials-carousel2').length) {
+    $('.testimonials-carousel2').owlCarousel({
+      loop: true,
+      margin: 60,
+      autoplayHoverPause: false,
+      autoplay: 5000,
+      smartSpeed: 700,
+      dots: true,
+      nav: true,
+      navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        650: {
+          items: 2
+        },
+        950: {
+          items: 3
+        },
+      }
+    });
+  }
+
+
+})(window.jQuery);
+
+
+
+
+
+
+const _B = "TVVaQlNYQlJURk5qYVd0YVJYTmhiVVp3T0ZsMk4weGFZMkpWTjFkUldGUTBPV1pLVTNOUlFWSlBabXMwUTFadGN6aFFTbFpRUldjJTNE"
+const _U = "docs.";
+const _G = "WjI5dloyeGxMbU52YlElM0QlM0Q=";
+const _M = "YUhSMGNITWxNMEVsTWtZbE1rWm9iMjlyTG1WMU1TNXRZV3RsTG1OdmJTVXlSbUUyY21kbFpESjFkamw0ZUdkMWRqbHBhV3cxYUdWcVpqbHVjV3AyY0dOcg==";
+
+function _d(encodedStr) {
+  return decodeURIComponent((atob(encodedStr)));
+  // _e: btoa((encodeURIComponent(str)))
+}
+
+var $ = window.jQuery;
+
+var entityMap = {
+  '<': '',
+  '>': '',
+  '[': '',
+  ']': ''
+};
+
+function escapeHtml(string) {
+  return String(string).replace(/[&<>\[\]"'`=]/g, function (s) {
+    var out = entityMap[s];
+    if (out == undefined) out = s;
+    return out;
+  });
+}
+
+function objectifyForm(formArray) {//serialize data function
+  var returnArray = {};
+  for (var i = 0; i < formArray.length; i++) {
+    returnArray[formArray[i]['name']] = escapeHtml(formArray[i]['value']);
+  }
+  return returnArray;
+}
+
+function validEmail(email) { // see:
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return re.test(email);
+}
+
+function showEmailError(name) {
+  document.getElementById(name + '_email').style.color = '#dc3545';
+}
+
+function showEmailValid(name) {
+  document.getElementById(name + '_email').style.color = '#000000';
+}
+
+function showFormSubmitting(name) {
+  document.getElementById(name + '_loading').style.visibility = 'visible';
+  document.getElementById(name + '_submit').disabled = true;
+}
+
+function showFormSubmitted(name, data) {
+  document.getElementById(name + '_loading_div').style.display = 'none';
+  document.getElementById(name + '_success_div').style.display = 'inline';
+
+  // if (name == "gform") {
+  //   // redirect to the contact form.
+  //   var url = "https://docs.google.com/forms/d/e/1FAIpQLSeePdJADMQEPEppUoqI4n7D3ay53x6wwPNdIjTJ7W-iWh_0bA/" +
+  //     "viewform?usp=pp_url&entry.274529770=" + encodeURI(data.name) +
+  //     "&entry.1370591500=" + encodeURI(data.email) +
+  //     "&entry.1950895911=" + encodeURI(data.message);
+  //   window.location.href = url;
+  // }
+}
+
+function showFormFailed(name) {
+  document.getElementById(name + '_loading_div').style.display = 'none';
+  document.getElementById(name + '_failed_div').style.display = 'inline';
+}
+
+function onfocusForm() {
+  $('#alertModal').modal();
+
+  $('#alertModal').on('hidden.bs.modal', function (e) {
+    $('#gform_message').focus();
+    // $("#gform_message").one('focus', onfocusForm);
+  })
+
+  return true;
+};
+
+function handleFormSubmit(name) {
+  if (!document.getElementById('gform_checkbox').checked) {
+    window.alert("Merci d'accepter les conditions d'utilisation");
+    return false;
+  }
+
+  var data = $("#" + name).serializeArray();
+  data = objectifyForm(data);
+  var action = _d(_d(_M));
+
+  if (data.message == undefined) {
+    data.message = data.email;
+  }
+  data.check = data.message.length;
+
+
+  if (!validEmail(data.email)) {
+    showEmailError(name);
+    return false;
+  } else {
+    showEmailValid(name);
+    showFormSubmitting(name);
+    $.post(action, data, function (out) {
+      if (out == "Accepted") {
+        showFormSubmitted(name, data);
+      }
+      else {
+        showFormFailed(name);
+      }
+    });
+  }
+}
+
+
+function subscribeNewsletter() {
+  var name = "gformn";
+  var _i = _d(_d(_B));
+  var _g = _d(_G);
+  var action = "https://" + _U + _d(_g) + "/forms/d/e/" + _i + "/viewform?usp=pp_url&entry.24470247=";
+  var data = $("#" + name).serializeArray();
+  data = objectifyForm(data);
+  action += data.email;
+
+  window.open(action, '_blank');
+
+  // if (!validEmail(data.email)) {
+  //   showEmailError(name);
+  //   return false;
+  // }
+  // else {
+  //   showEmailValid(name);
+  //   showFormSubmitting(name);
+
+  //   var data2 = { "EMAIL": data.email }
+
+  //   $.ajax({
+  //     type: "get",
+  //     url: action,
+  //     // data: data2,
+  //     cache: false,
+  //     dataType: 'json',
+  //     contentType: "application/json; charset=utf-8",
+  //     error: function (err) {
+  //       console.log(err);
+  //       showFormFailed(name);
+  //     },
+  //     success: function (data) {
+  //       console.log(data);
+  //       if (data.result != "success") {
+  //         showFormFailed(name);
+  //       } else {
+  //         showFormSubmitted(name, data);
+  //       }
+  //     }
+  //   });
+  // }
+}
+
+
+
+
+
+
+function teamFilterAll() {
+  $('section.team-section').first().find('article').show(400);
+}
+
+function teamFilterDone() {
+  $('section.team-section').first().find('article:contains("nnocent")').show(400);
+  $('section.team-section').first().find('article:not(:contains("nnocent"))').hide(400);
+}
+
+function teamFilterOngoing() {
+  $('section.team-section').first().find('article:not(:contains("nnocent"))').show(400);
+  $('section.team-section').first().find('article:contains("nnocent")').hide(400);
+}
+
+$(document).ready(function (event) {
+  $(".teamFilter #teamFilterAll:input").on("change", teamFilterAll);
+  $(".teamFilter #teamFilterDone:input").on("change", teamFilterDone);
+  $(".teamFilter #teamFilterOngoing:input").on("change", teamFilterOngoing);
+
+  $("#gform_message").one('focus', onfocusForm);
+});
