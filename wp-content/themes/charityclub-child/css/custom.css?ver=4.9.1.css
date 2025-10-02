@@ -789,3 +789,33 @@ a:hover{
 .footer-widget.contact-widget input[type="submit"]:hover{
     background:#303030;
 }
+
+.hero-update-banner {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    color: #7f9497;
+    padding: clamp(22px, 4vw, 36px) clamp(32px, 5.5vw, 68px);
+    border: clamp(4px, 0.65vw, 8px) solid #7f9497;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 2.6vw, 26px);
+    letter-spacing: clamp(0.06em, 0.16vw, 0.12em);
+    line-height: 1.45;
+    text-align: center;
+    box-shadow: 0 18px 32px rgba(34, 56, 57, 0.22);
+    width: 100%;
+    /* max-width: min(960px, calc(100% - 40px)); */
+    /* z-index: 1200; */
+}
+
+@media (max-width: 575px) {
+    .hero-update-banner {
+        border-radius: 4px;
+        top: clamp(110px, 22vw, 220px);
+    }
+}
