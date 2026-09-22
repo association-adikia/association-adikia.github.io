@@ -1,0 +1,212 @@
+
+.lined-btn:hover,
+.btn-style-two,
+.rounded-btn-theme:hover,
+.rounded-btn-blue,
+.scroll-to-top,
+.main-header .header-upper .nav-outer .btn-donate,
+.header-style-two .lower-part .outer-box,
+.main-slider .circular-drop,
+.main-slider .bg-color,
+.features-column .icon-box:before,
+.featured-fluid-section .dark-column .title-text:after,
+.default-featured-column .image-box .post-tag,
+.default-featured-column .image-box .donate-piechart .piechart-block,
+.two-column-fluid .left-column .title-text:after,
+.two-column-fluid .right-column .quote-icon,
+.events-post .event-date .event-day,
+.bx-controls .bx-controls-direction > a,
+.blog-news-column .image-box .news-date,
+.sponsors-section,
+.subscribe-intro,
+.footer-widget.contact-widget button,
+.main-footer .social-links a:hover,
+.social-links-two a:hover,
+.accordion-box .accordion .accord-btn.active:before,
+.team-section .team-member .social-links a:hover,
+.sidebar-page .group-title:after,
+.sidebar-page .comments-area .reply-btn:hover,
+.sidebar .search-box .form-group input:focus + button,
+.sidebar .search-box .form-group button:hover,
+.sidebar .sidebar-title:after,
+.sidebar .popular-tags a:hover,
+.fact-counter .column .inner,
+.gallery-section .filter-btns li:hover,
+.gallery-section .filter-btns li.active,
+.donation-form-outer .radio-select input[type="radio"]:checked+label,
+.main-menu .navbar-header .navbar-toggle,
+.main-menu .navbar-collapse > .navigation,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul,
+.main-menu .navbar-collapse > .navigation > li > a:active,
+.main-menu .navbar-collapse > .navigation > li > a:focus,
+.main-menu .navbar-collapse > .navigation > li.current > a,
+.main-menu .navbar-collapse > .navigation > li.current-menu-item > a,
+.tagcloud a:hover,
+.campaign-summary .campaign-donation .donate-button,
+.tribe-events-sub-nav .post-control a:hover .control-thumb,
+.charitable-donation-form button,
+.footer-widget .search-box .form-group button:hover,
+.main-menu .navbar-collapse > .navigation > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+.main-menu .navigation > li > ul > li:hover > a
+{
+
+    background-color: #7f9497;
+}
+
+
+
+
+
+a,
+.rounded-btn-blue:hover,
+.scroll-to-top:hover,
+.main-header .top-bar .info-box li .icon,
+.main-header .top-bar .info-box li a:hover,
+.social-links-one a:hover,
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li.current-menu-item > a,
+.header-style-two .lower-part .outer-box .btn-box a:hover,
+.main-features .title-box h1,
+.default-icon-column .icon-box .icon,
+.default-featured-column h3 a:hover,
+.default-featured-column .column-info,
+.two-column-fluid .icon-box .icon,
+.vertical-links-outer .link-block .alternate .title a:hover,
+.events-post .event-held li i,
+.bx-controls .bx-controls-direction > a:hover,
+.bx-controls .bx-controls-direction > a:hover i,
+.testimonials-section .slide-item .designation,
+.blog-news-column h3 a:hover,
+.blog-news-column .post-info .icon,
+.footer-upper .links-widget li a:hover,
+.footer-upper .news-widget .news-post a:hover,
+.main-footer .contact-info li .icon,
+.page-title .bread-crumb a:hover,
+.accordion-box .accordion .accord-btn:before,
+.accordion-box .accordion .accord-btn.active,
+.video-box .video-link .icon-outer .fa,
+.styled-list-one li::before,
+.styled-list-two li::before,
+.team-section .team-member .designation,
+.sidebar .recent-posts .post a,
+.sidebar .recent-posts .post a:hover,
+.sidebar-page .contact-info a,
+.sidebar .list li a:hover,
+.widget ul li a:hover,
+.footer-widget .tagcloud a,
+.footer-widget.contact-widget button:hover,
+.main-footer .contact-info li .icon
+{
+    color: #7f9497;
+}
+
+
+
+
+.lined-btn,
+.lined-btn:hover,
+.btn-style-one:hover,
+.btn-style-two:hover,
+.btn-style-five:hover,
+.rounded-btn:hover,
+.rounded-btn-theme,
+.rounded-btn-theme:hover,
+.rounded-btn-blue,
+.rounded-btn-blue:hover,
+.rounded-btn-alt,
+.double-line::before,
+.double-line::after,
+.owl-carousel.owl-nav-style.owl-nav3 .owl-nav .owl-prev:hover,
+.owl-carousel.owl-nav-style.owl-nav3 .owl-nav .owl-next:hover ,
+.main-header,
+.main-menu .navigation > li > ul,
+.main-menu .navigation > li > ul > li,
+.main-menu .navigation > li > ul > li > ul,
+.main-menu .navigation > li > ul > li > ul > li,
+.default-icon-column:hover .icon-box:before,
+.two-column-fluid .icon-box .lower-box,
+.two-column-fluid .right-column .quote-icon,
+.bx-controls .bx-controls-direction > a,
+.testimonials-section .testimonials-slider .slide-item:hover,
+.testimonials-section .testimonials-slider .slide-item:hover .image-box,
+.social-links-two a:hover,
+.social-links-two.alt a:hover,
+.accordion-box .accordion .accord-btn:before,
+.accordion-box .accordion .accord-btn.active,
+.team-section .team-member .social-links a:hover,
+.comment-form .form-group input[type="text"]:focus,
+.comment-form .form-group input[type="password"]:focus,
+.comment-form .form-group input[type="tel"]:focus,
+.comment-form .form-group input[type="email"]:focus,
+.comment-form .form-group select:focus,
+.comment-form .form-group textarea:focus,
+.sidebar .search-box .form-group input:focus,
+.sidebar .popular-tags a:hover,
+.filters-section .form-group input:focus,
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus,
+.gallery-section .filter-btns li:hover,
+.gallery-section .filter-btns li.active,
+.main-menu .collapse,
+.main-menu .collapse.in,
+.main-menu .collapsing,
+.main-menu .navbar-header .navbar-toggle,
+.tagcloud a:hover,
+.campaign-summary .campaign-donation .donate-button:hover,
+.charitable-form-fields input,.charitable-form-fields select,
+.charitable-donation-form button
+{
+    border-color: #7f9497;
+}
+
+.scroll-to-top:hover
+{
+    box-shadow: #7f9497;
+}
+
+
+.btn-style-one:hover,
+.btn-style-two:hover,
+.btn-style-five,
+.rounded-btn:hover,
+.rounded-btn-theme,
+.theme_color,
+.campaign-summary .campaign-donation .donate-button:hover
+{
+    color: #7f9497 !important;
+}
+
+
+
+.btn-style-two,
+.campaign-summary .campaign-donation .donate-button
+{
+    border-color: #7f9497 !important;
+}
+
+
+.testimonials-section .owl-controls .owl-next,
+.testimonials-section .owl-controls .owl-prev,
+.social-links-two.alt a:hover,
+.inner-box.contact-form .text-right .theme-btn.btn-style-two,
+.footer-widget.contact-widget input[type="submit"]
+{
+    background-color: #7f9497 !important;
+
+}
+
+
+
+.default-portfolio-item .overlay-box{
+    background-color: rgba(127,148,151,0.7) !important;
+}
+
+@media only screen and (max-width: 767px){
+    .main-menu .navbar-collapse > .navigation > li > a,
+    .main-menu .navbar-collapse > .navigation > li > ul > li > a,
+    .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
+        background-color: #7f9497;
+    }
+}
